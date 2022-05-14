@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.example.businessprovider.dao.BusinessDao">
+
+    <resultMap id="businessMap" type="Business">
+        <id column="id" property="busId" />
+        <result column="busname" property="busName"/>
+        <result column="busaddress" property="busAddress"/>
+        <result column="bustell" property="busTell"/>
+    </resultMap>
+    <insert id="add">
+        insert into business(busname,busaddress,bustell)
+        values (#{busName},#{busAddress},#{busTell})
+    </insert>
+    <update id="updata">
+        update business set busname=#{busName},busaddress=#{busAddress},bustell=#{busTell}
+        where id=#{busId}
+    </update>
+    <delete id="deleteBusinessById">
+        delete from business where id=#{id}
+    </delete>
+    <select id="getBusinessList" resultMap="businessMap">
+        select * from business
+    </select>
+    <select id="getBusinessById" resultMap="businessMap">
+        select * from business where id=#{id}
+    </select>
+</mapper>
+ 

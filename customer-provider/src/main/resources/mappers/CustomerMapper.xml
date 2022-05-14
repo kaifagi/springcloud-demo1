@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.customerprovider.dao.CustomerDao">
+
+    <resultMap id="customerMap" type="Customer">
+        <id column="id" property="customerId"/>
+        <result column="customer_name" property="customerName"/>
+        <result column="customer_address" property="customerAddress"/>
+        <result column="customer_ticket" property="customerTicket"/>
+    </resultMap>
+
+    <select id="getCustomerList" resultMap="customerMap">
+        select * from customer
+    </select>
+    <select id="getCustomerById" resultMap="customerMap">
+        select * from customer where id=#{id}
+    </select>
+</mapper>
+ 

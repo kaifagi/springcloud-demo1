@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/business-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/business-ui/pom.xml" />
+        <option value="$PROJECT_DIR$/business-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/customer-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/customer-ui/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-deshboard/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
